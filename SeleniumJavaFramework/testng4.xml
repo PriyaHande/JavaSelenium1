@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2">
+	<test name="Test2">
+
+		<groups>
+		<!-- !*meta groups*! -->
+		<define name="regression 1">
+		<include name="regression"></include>
+		<include name="smoke"></include>
+		</define>
+		<!-- !*meta groups*! -->
+		
+			<run>
+				<include name="regression 1"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="GroupinginTestNG.GroupsDemo" />
+		</classes>
+	</test> <!-- Test2 -->
+</suite> <!-- Suite2 -->
