@@ -65,11 +65,32 @@
 			<version>4.1.2</version>
 		</dependency>
 
-
+		<!-- https://mvnrepository.com/artifact/com.applitools/eyes-common-java3 -->
+		<dependency>
+			<groupId>com.applitools</groupId>
+			<artifactId>eyes-common-java3</artifactId>
+			<version>3.164.1</version>
+		</dependency>
 
 
 
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M4</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>C:\Users\lenovo\git\JavaSelenium1\SeleniumJavaFramework\testng6.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 
 
 
